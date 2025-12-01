@@ -43,13 +43,22 @@ This is the tricky part! Since 0 is equivalent to any multiple of 100 (0, 100, 2
 
 I used a mathematical trick involving the `floor` function:
 
-- The number of 100s in a number $X$ is $\lfloor X / 100 \rfloor$.
+- The number of 100s in a number X is `floor(X / 100)`.
 - The difference between the floor of the end position and the floor of the start position tells us how many "100 boundaries" were crossed.
 
-For positive moves (Right):
-$$ \text{Crossings} = \lfloor \frac{\text{End}}{100} \rfloor - \lfloor \frac{\text{Start}}{100} \rfloor $$
+**For positive moves (Right):**
 
-For negative moves (Left), the logic is similar but inverted to handle the direction correctly.
+```
+Crossings = floor(End / 100) - floor(Start / 100)
+```
+
+**For negative moves (Left):**
+
+```
+Crossings = floor(-End / 100) - floor(-Start / 100)
+```
+
+The logic for negative moves is inverted to handle the direction correctly.
 
 ## 🚀 How to Run
 
