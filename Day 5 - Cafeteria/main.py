@@ -1,14 +1,14 @@
 def parse_ranges(filename):
     with open(filename) as f:
         lines = [line.strip() for line in f if line.strip()]
-    # Only take lines with a dash (the ranges)
+    
     ranges = []
     for line in lines:
         if '-' in line:
             start, end = map(int, line.split('-'))
             ranges.append((start, end))
         else:
-            break  # Stop at the first non-range line
+            break  
     return ranges
 
 def merge_ranges(ranges):
