@@ -2,6 +2,10 @@
 
 Welcome to my Advent of Code 2025 repo. This year, I challenged myself to solve every puzzle, every day, and document not just the solutions, but the journey, my thought process, struggles, and little victories along the way.
 
+![Advent of Code 2025 - All Stars](Completion%20Pictures/AOC-Home.png)
+
+![Completion Message](Completion%20Pictures/AOC-Completion.png)
+
 ## Why Advent of Code?
 
 Advent of Code is a December tradition for programmers: a new puzzle drops every midnight, and thousands of coders around the world race to solve it. For me, it’s a chance to sharpen my problem-solving skills, learn new algorithms, and have fun with code; sometimes late into the night!
